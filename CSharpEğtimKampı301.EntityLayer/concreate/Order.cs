@@ -9,6 +9,16 @@ namespace CSharpEğtimKampı301.EntityLayer.concreate
     public class Order
     {
         public int OrderId { get; set; }
+        public virtual Product Product { get; set; }
+        public List<Order> Orders { get; set; }
+        public int Quantity { get; set; }
+        public decimal UnitPrice { get; set; }
+        public decimal TotalPrice { get; set; }
+        public int CustumerId { get; set; }
+        public virtual Custumer Custumer { get; set; }
 
+
+
+        
     }
 }

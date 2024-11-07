@@ -13,6 +13,8 @@ namespace CSharpEğtimKampı301.EntityLayer.concreate
        
         public string CustumersSurname { get; set; }
         public string CustumerDistract { get; set; }
+      
+        public List<Order> Orders { get; set; }
 
 
     }

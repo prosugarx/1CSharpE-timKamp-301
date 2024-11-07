@@ -16,6 +16,11 @@ namespace CSharpEğtimKampı301.EntityLayer.concreate
         public int ProductStock { get; set; }
         public string ProductDescription { get; set; }
 
+        public int CategoryId { get; set; }
+        public virtual category Category { get; set; }
+        public List<Order> Orders { get; set; }
+    
+
 
 
     }

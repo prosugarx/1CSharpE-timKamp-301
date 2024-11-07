@@ -11,6 +11,7 @@ namespace CSharpEğtimKampı301.EntityLayer.concreate
         public int CategoryId { get; set; }
         public string CategoryName { get; set; }
         public bool CategoryStatus { get; set; }
+        public List<category> Categories { get; set; }
         
 
 
