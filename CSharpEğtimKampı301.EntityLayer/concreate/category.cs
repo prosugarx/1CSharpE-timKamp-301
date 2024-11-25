@@ -8,10 +8,10 @@ namespace CSharpEğtimKampı301.EntityLayer.concreate
 {
     public class category
     {
-        public int CategoryId { get; set; }
-        public string CategoryName { get; set; }
-        public bool CategoryStatus { get; set; }
-        public List<category> Categories { get; set; }
+        public int categoryId { get; set; }
+        public string categoryName { get; set; }
+        public bool categoryStatus { get; set; }
+        public List<category> categories { get; set; }
         
 
 

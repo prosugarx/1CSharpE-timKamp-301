@@ -10,7 +10,7 @@ namespace CSharpEğtimKampı301.DataAccessLayer.Context
 {
     public class CampContext : DbContext
     {
-        public DbSet<category> Categories { get; set; }
+        public DbSet<category> categories { get; set; }
         public DbSet<Custumer> Custumers { get; set; }
         public DbSet<Order> Orders { get; set; }
         public DbSet<Product> Products { get; set; }

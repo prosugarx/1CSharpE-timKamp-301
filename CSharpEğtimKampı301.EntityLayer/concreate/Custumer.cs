@@ -16,6 +16,7 @@ namespace CSharpEğtimKampı301.EntityLayer.concreate
       
         public List<Order> Orders { get; set; }
 
+        public bool CustumerStatus { get; set; }
 
     }
 }

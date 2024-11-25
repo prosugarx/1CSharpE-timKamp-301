@@ -51,7 +51,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstarct\IAdminDal.cs" />
+    <Compile Include="Abstarct\ICategoryDal.cs" />
+    <Compile Include="Abstarct\ICustumerDal.cs" />
+    <Compile Include="Abstarct\IGenericDal.cs" />
+    <Compile Include="Abstarct\IOrderDal.cs" />
+    <Compile Include="Abstarct\IProductDal.cs" />
     <Compile Include="Context\CampContext.cs" />
+    <Compile Include="Migrations\202411251249483_mig1.cs" />
+    <Compile Include="Migrations\202411251249483_mig1.Designer.cs">
+      <DependentUpon>202411251249483_mig1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -60,10 +71,18 @@
       <Name>CSharpEgtimKampı301.EntityLayer</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="EntityFramework\" />
+    <Folder Include="Reprositories\" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202411251249483_mig1.resx">
+      <DependentUpon>202411251249483_mig1.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
