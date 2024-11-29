@@ -51,5 +51,27 @@ namespace CSharpEğtimKampı301.EFProject
             db.SaveChanges();
             MessageBox.Show("ekleme işlemi başarılı");
         }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            int id = int.Parse(textId.Text);
+            var deletedValue = db.Location.Find(id);
+            db.Location.Remove(deletedValue);
+            db.SaveChanges();
+            MessageBox.Show("silme işlemi başarılı");
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            int id=int.Parse(textId.Text);
+            var updatedValue = db.Location.Find(id);
+            updatedValue.DayNight = txtDayNight.Text;
+            updatedValue.Capacity=byte.Parse(nudCpacity.Value.ToString());
+            updatedValue.City=txtCity.Text;
+            updatedValue.Country=txtCountry.Text;
+            updatedValue.Price=decimal.Parse(txtPrice.Text);
+            updatedValue.GuideId=int.Parse(cmbGuide.SelectedValue.ToString());
+            MessageBox.Show("güncelleme işlemi başarılı");
+        }
     }
 }

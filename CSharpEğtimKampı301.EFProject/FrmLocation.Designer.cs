@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnGetById = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
@@ -54,18 +53,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.nudCpacity)).BeginInit();
             this.SuspendLayout();
             // 
-            // btnGetById
-            // 
-            this.btnGetById.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btnGetById.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnGetById.ForeColor = System.Drawing.Color.Purple;
-            this.btnGetById.Location = new System.Drawing.Point(132, 534);
-            this.btnGetById.Name = "btnGetById";
-            this.btnGetById.Size = new System.Drawing.Size(241, 49);
-            this.btnGetById.TabIndex = 28;
-            this.btnGetById.Text = "Id\'ye Göre Getir";
-            this.btnGetById.UseVisualStyleBackColor = false;
-            // 
             // btnUpdate
             // 
             this.btnUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
@@ -77,6 +64,7 @@
             this.btnUpdate.TabIndex = 27;
             this.btnUpdate.Text = "Güncelle";
             this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnDelete
             // 
@@ -89,6 +77,7 @@
             this.btnDelete.TabIndex = 26;
             this.btnDelete.Text = "Sil";
             this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnAdd
             // 
@@ -271,7 +260,6 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.textId);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.btnGetById);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnAdd);
@@ -294,8 +282,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnGetById;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnAdd;
