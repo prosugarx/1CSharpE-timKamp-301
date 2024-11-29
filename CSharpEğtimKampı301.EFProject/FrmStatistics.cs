@@ -42,8 +42,8 @@ namespace CSharpEğtimKampı301.EFProject
             var minCapacity = db.Location.Min(x => x.Capacity);
             lblMinCapacityLocation.Text = db.Location.Where(x => x.Capacity == minCapacity).Select(y => y.City).FirstOrDefault().ToString();
 
-            var guideIdByNameKenanYıldız=db.Guide.Where(x=>x.GuideName=="kenan" && x.GuideSurname=="yıldız").Select(y=>y.GuideId).FirstOrDefault();
-            lblKenanYıldızLocationCount.Text=db.Location.Where(x=>x.GuideId==guideIdByNameKenanYıldız).Count().ToString();
+            var guideByNameKenanYıldız=db.Guide.Where(x=>x.GuideName=="kenan" && x.GuideSurname=="yıldız").Select(y=>y.GuideId).FirstOrDefault();
+            lblKenanYıldızLocationCount.Text=db.Location.Where(x=>x.GuideId==guideByNameKenanYıldız).Count().ToString();
 
         }
         public FrmStatistics()
