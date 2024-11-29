@@ -2,4 +2,4 @@
 * Entity famework ve linq sorgularını kullanarak yaptığım tur projesi. Bu projeyi hazırlarken Form kullanmayı öğrendim ve  sql ile c# bağlantısını daha iyi kavradım. 
 
 
-![c# travel](https://github.com/user-attachments/assets/335646c2-6443-4376-969d-0b15f42e862a)
+![C# TTRAVEL](https://github.com/user-attachments/assets/dd909de7-350a-41d8-8761-abb401c8a4c0)
