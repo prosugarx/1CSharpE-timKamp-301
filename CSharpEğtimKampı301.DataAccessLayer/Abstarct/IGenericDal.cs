@@ -10,7 +10,7 @@ namespace CSharpEğtimKampı301.DataAccessLayer.Abstarct
     {
         void Insert(T entity);
         void Update(T entity);
-        void Delete(int id);
+        void Delete(T entity);
         List<T> GetAll();
         T Get(int id);
     }
