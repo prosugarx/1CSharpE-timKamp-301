@@ -1,4 +1,5 @@
 ﻿using CSharpEgtimKampı301.BussinesLayer.Abstract;
+using CSharpEğtimKampı301.DataAccessLayer.Abstarct;
 using CSharpEğtimKampı301.EntityLayer.concreate;
 using System;
 using System.Collections.Generic;
@@ -10,29 +11,36 @@ namespace CSharpEgtimKampı301.BussinesLayer.Concrate
 {
     public class ProductManager : IProductService
     {
+        public readonly IProductDal _productDal;
+
+        public ProductManager(IProductDal productDal)
+        {
+            _productDal = productDal;
+        }
+
         public void TDelete(Product entity)
         {
-            throw new NotImplementedException();
+            _productDal.Delete(entity);
         }
 
         public Product TGet(int id)
         {
-            throw new NotImplementedException();
+            return _productDal.Get(id);
         }
 
         public List<Product> TGetAll()
         {
-            throw new NotImplementedException();
+            return _productDal.GetAll();
         }
 
         public void TInsert(Product entity)
         {
-            throw new NotImplementedException();
+            _productDal.Insert(entity);
         }
 
         public void TUpdate(Product entity)
         {
-            throw new NotImplementedException();
+            _productDal.Update(entity);
         }
     }
 }
