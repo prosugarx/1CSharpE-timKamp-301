@@ -11,7 +11,7 @@ namespace CSharpEgtimKampı301.BussinesLayer.Concrate
 {
     public class CategoryManager : ICategoryService
     {
-        public readonly ICategoryDal _categoryDal;
+        private readonly ICategoryDal _categoryDal;
 
         public CategoryManager(ICategoryDal categoryDal)
         {

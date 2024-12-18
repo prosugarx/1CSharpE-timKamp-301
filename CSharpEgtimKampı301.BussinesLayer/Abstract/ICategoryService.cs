@@ -9,6 +9,6 @@ namespace CSharpEgtimKampı301.BussinesLayer.Abstract
 {
     public interface ICategoryService:IGenericService<category>
     {
-
+        
     }
 }

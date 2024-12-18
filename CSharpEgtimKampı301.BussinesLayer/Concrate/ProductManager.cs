@@ -11,7 +11,7 @@ namespace CSharpEgtimKampı301.BussinesLayer.Concrate
 {
     public class ProductManager : IProductService
     {
-        public readonly IProductDal _productDal;
+        private readonly IProductDal _productDal;
 
         public ProductManager(IProductDal productDal)
         {

@@ -12,7 +12,7 @@ namespace CSharpEgtimKampı301.BussinesLayer.Concrate
 {
     public class CustumerManager : ICustumerService
     {
-        public readonly ICustumerDal _custumerDal;// _ alt tire koymamızın sebebi
+        private readonly ICustumerDal _custumerDal;// _ alt tire koymamızın sebebi
                                                   // ctrl . yapıp generete concrete gibi bir şeye basınca
                                                   // başında this getirir
                                                   // ve biz her şeyi thisle çağırak torunda kalırız.

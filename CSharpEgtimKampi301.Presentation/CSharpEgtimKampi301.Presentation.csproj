@@ -95,6 +95,14 @@
       <Project>{1814f155-1bfc-4af4-8e4d-eb145e6b8e63}</Project>
       <Name>CSharpEgtimKampı301.BussinesLayer</Name>
     </ProjectReference>
+    <ProjectReference Include="..\CSharpEğtimKampı301.DataAccessLayer\CSharpEğtimKampı301.DataAccessLayer.csproj">
+      <Project>{C3825B02-0249-4689-A26C-58F76163A9B3}</Project>
+      <Name>CSharpEğtimKampı301.DataAccessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CSharpEğtimKampı301.EntityLayer\CSharpEgtimKampı301.EntityLayer.csproj">
+      <Project>{A6552F5E-D05A-4CBC-97DE-89E7924C85D7}</Project>
+      <Name>CSharpEgtimKampı301.EntityLayer</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

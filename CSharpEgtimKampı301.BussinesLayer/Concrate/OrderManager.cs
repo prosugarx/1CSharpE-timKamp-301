@@ -11,7 +11,7 @@ namespace CSharpEgtimKampı301.BussinesLayer.Concrate
 {
     public class OrderManager : IOrderService
     {
-        public readonly IOrderDal _orderDal;
+        private readonly IOrderDal _orderDal;
 
         public OrderManager(IOrderDal orderDal)
         {
