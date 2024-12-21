@@ -9,5 +9,6 @@ namespace CSharpEgtimKampı301.BussinesLayer.Abstract
 {
     public interface IProductService:IGenericService<Product>
     {
+        List<object> TGetProductsWithCategory();
     }
 }

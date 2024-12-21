@@ -9,5 +9,6 @@ namespace CSharpEğtimKampı301.DataAccessLayer.Abstarct
 {
     public interface IProductDal: IGenericDal<Product>
     {
+        List<object> GetProductsWithCategory();
     }
 }

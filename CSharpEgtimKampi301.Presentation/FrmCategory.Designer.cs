@@ -51,6 +51,7 @@
             this.txt.Size = new System.Drawing.Size(74, 16);
             this.txt.TabIndex = 0;
             this.txt.Text = "Kategori Id:";
+            this.txt.Click += new System.EventHandler(this.txt_Click);
             // 
             // btnList
             // 
@@ -79,6 +80,7 @@
             this.txtCategoryId.Name = "txtCategoryId";
             this.txtCategoryId.Size = new System.Drawing.Size(244, 22);
             this.txtCategoryId.TabIndex = 3;
+            this.txtCategoryId.TextChanged += new System.EventHandler(this.txtCategoryId_TextChanged);
             // 
             // btnAdd
             // 
@@ -126,6 +128,7 @@
             this.txtCategoryNamee.Name = "txtCategoryNamee";
             this.txtCategoryNamee.Size = new System.Drawing.Size(244, 22);
             this.txtCategoryNamee.TabIndex = 9;
+            this.txtCategoryNamee.TextChanged += new System.EventHandler(this.txtCategoryNamee_TextChanged);
             // 
             // txtCategoryName
             // 
@@ -143,6 +146,7 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(244, 22);
             this.textBox3.TabIndex = 11;
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // label3
             // 
@@ -152,6 +156,7 @@
             this.label3.Size = new System.Drawing.Size(109, 16);
             this.label3.TabIndex = 10;
             this.label3.Text = "Kategori Durumu:";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // FrmCategory
             // 

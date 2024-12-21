@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Reflection.Emit;
 using System.Text;
@@ -19,8 +20,9 @@ namespace CSharpEğtimKampı301.EntityLayer.concreate
         public int categoryId { get; set; }
         public virtual category category { get; set; }
         public List<Order> Orders { get; set; }
-    
-
+        
+       // [NotMapped]
+        //public string CategoryName { get; set; };
 
 
     }

@@ -74,10 +74,36 @@ namespace CSharpEgtimKampi301.Presentation
         }
 
         private void btnGetById_Click(object sender, EventArgs e)
-        {
+        {//burası çalışmıyor
             int id = int.Parse(txtCategoryId.Text);
-            var values = _categoryService.TGet(id);
-            dataGridView1.DataSource = values; 
+            var value = _categoryService.TGet(id);
+            var valuesList = new List<category> { value };
+            dataGridView1.DataSource = valuesList; 
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtCategoryNamee_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtCategoryId_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

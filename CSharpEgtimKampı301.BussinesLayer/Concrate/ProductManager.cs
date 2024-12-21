@@ -18,6 +18,11 @@ namespace CSharpEgtimKampı301.BussinesLayer.Concrate
             _productDal = productDal;
         }
 
+        public List<object>TGetProductsWithCategory()
+        {
+            return _productDal.GetProductsWithCategory();
+        }
+
         public void TDelete(Product entity)
         {
             _productDal.Delete(entity);
